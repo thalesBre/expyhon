@@ -6,7 +6,7 @@ def calcular_primos_e_divisoes(divisivel: int) -> Tuple[str, int]:
     primos, divisoes = '', 0
     for n in range(1, divisivel + 1):
         (divisoes := 1)
-        if eh_primo(n):
+        if n in range (2):
             primos += f'{str(n)}, '
     primos = primos.removesuffix(', ')
 
